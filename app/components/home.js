@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { TouchableOpacity, View } from "react-native";
+import { Text } from "native-base";
 import gameOfLife from "../utils/gameOfLife";
 import styles from "../styles/home";
+import GeneralContent from "./generalContent";
 import Grid from "../containers/grid";
 
 class Home extends Component {
@@ -39,7 +41,7 @@ class Home extends Component {
     }
 
     render() {
-        return (
+        const content = (
             <View>
                 <View style={{ padding: 10 }}>
                     <Grid />
@@ -63,6 +65,8 @@ class Home extends Component {
                 </View>
             </View>
         );
+
+        return <GeneralContent content={content} />;
     }
 }
 
