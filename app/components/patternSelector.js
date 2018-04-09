@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import { Text } from "react-native";
-import { Container } from "native-base";
+import { View } from "react-native";
 import GeneralContent from "./generalContent";
+import Card from "./patternCard";
 
 class SelectorPattern extends Component {
     render() {
-        const content = <Text>Patter selector</Text>;
+        const content = (
+            <View>
+                <Card />
+            </View>
+        );
 
         return <GeneralContent content={content} />;
     }
