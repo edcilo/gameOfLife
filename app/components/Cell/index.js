@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { TouchableWithoutFeedback, View } from "react-native";
+
 import style from "./styles";
 
 class Cell extends Component {

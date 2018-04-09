@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Container, Content, Drawer } from "native-base";
+
 import style from "./styles";
+
 import SideBar from "../Sidebar";
 import Header from "../Header";
 
