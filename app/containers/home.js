@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { Actions } from "react-native-router-flux";
 
 import { updateGrid } from "../actions";
-import Home from "../components/home";
+import Home from "../components/Home/index";
 
 function mapStateToProps(state, props) {
     return {

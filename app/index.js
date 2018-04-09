@@ -9,7 +9,7 @@ import { connect } from "react-redux";
 
 import { getGrid } from "./actions";
 import Home from "./containers/home";
-import PatternSelector from "./components/patternSelector";
+import PatternSelector from "./components/PatternSelector/index";
 
 class Main extends Component {
     constructor(props) {

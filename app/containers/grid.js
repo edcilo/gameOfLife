@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { Actions } from "react-native-router-flux";
 
 import { getGrid } from "../actions";
-import Grid from "../components/grid";
+import Grid from "../components/Grid";
 
 function mapStateToProps(state, props) {
     return {

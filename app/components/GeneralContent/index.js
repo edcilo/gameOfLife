@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Container, Content, Drawer } from "native-base";
-import style from "./../styles/generalContent";
-import SideBar from "../components/sidebar";
-import Header from "./header";
+import style from "./styles";
+import SideBar from "../Sidebar";
+import Header from "../Header";
 
 class GeneralContent extends Component {
     constructor(props) {

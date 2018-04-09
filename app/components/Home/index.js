@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { TouchableOpacity, View } from "react-native";
 import { Text } from "native-base";
-import gameOfLife from "../utils/gameOfLife";
-import styles from "../styles/home";
-import GeneralContent from "./generalContent";
-import Grid from "../containers/grid";
+import gameOfLife from "../../utils/gameOfLife";
+import styles from "./styles";
+import GeneralContent from "../GeneralContent/index";
+import Grid from "../../containers/grid";
 
 class Home extends Component {
     constructor(props) {

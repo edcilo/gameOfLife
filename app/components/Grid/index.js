@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import style from "../styles/grid";
-import Row from "./row";
+import style from "./styles";
+import Row from "../Row";
 
 class Grid extends Component {
     constructor(props) {

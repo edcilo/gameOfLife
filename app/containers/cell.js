@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { Actions } from "react-native-router-flux";
 
 import { updateGrid } from "../actions";
-import Cell from "../components/cell";
+import Cell from "../components/Cell";
 
 function mapDispatchToProps(dispatch) {
     return bindActionCreators({ updateGrid }, dispatch);

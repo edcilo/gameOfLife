@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Actions } from "react-native-router-flux";
 import { TouchableOpacity } from "react-native";
-import { Button, Content, List, ListItem, Text } from "native-base";
-import style from "./../styles/sidebar";
+import { Content, Text } from "native-base";
+import style from "./styles";
 
 class SideBar extends Component {
     render() {
