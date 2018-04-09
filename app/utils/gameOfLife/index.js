@@ -28,8 +28,8 @@ class gameOfLife {
     }
 
     fillGrid(grid) {
-        for (var j = 0; j < grid.length; j++) {
-            for (var k = 0; k < grid[j].length; k++) {
+        for (let j = 0; j < grid.length; j++) {
+            for (let k = 0; k < grid[j].length; k++) {
                 grid[j][k] = Math.round(Math.random()) === 1 ? 1 : 0;
             }
         }
@@ -83,13 +83,13 @@ class gameOfLife {
             for (let x = 0; x < length_x; x++) {
                 let cell = current_gen[y][x];
 
-                var row_above = y - 1 >= 0 ? y - 1 : length_y - 1;
-                var row_below = y + 1 <= length_y - 1 ? y + 1 : 0;
+                let row_above = y - 1 >= 0 ? y - 1 : length_y - 1;
+                let row_below = y + 1 <= length_y - 1 ? y + 1 : 0;
 
-                var column_left = x - 1 >= 0 ? x - 1 : length_x - 1;
-                var column_right = x + 1 <= length_x - 1 ? x + 1 : 0;
+                let column_left = x - 1 >= 0 ? x - 1 : length_x - 1;
+                let column_right = x + 1 <= length_x - 1 ? x + 1 : 0;
 
-                var neighbours = {
+                let neighbours = {
                     top_left: current_gen[row_above][column_left],
                     top_center: current_gen[row_above][x],
                     top_right: current_gen[row_above][column_right],
@@ -100,8 +100,8 @@ class gameOfLife {
                     bottom_right: current_gen[row_below][column_right]
                 };
 
-                var alive_count = 0;
-                var dead_count = 0;
+                let alive_count = 0;
+                let dead_count = 0;
                 for (let neighbour in neighbours) {
                     if (neighbours[neighbour] === 0) {
                         dead_count++;
@@ -110,7 +110,7 @@ class gameOfLife {
                     }
                 }
 
-                var new_state = cell;
+                let new_state = cell;
                 if (cell === 1) {
                     if (alive_count < 2 || alive_count > 3) {
                         new_state = 0;

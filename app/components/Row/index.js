@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import style from "../styles/row";
-import Cell from "../containers/cell";
+import style from "./styles";
+import Cell from "../../containers/cell";
 
 class Row extends Component {
     constructor(props) {
